@@ -32,7 +32,7 @@ def delete_file_contets(path):
         pass
 
 # Read a file and convert each line to set items
-def file_to_set(file_name)
+def file_to_set(file_name):
     results = set()
     with open(file_name, 'rt') as f:
         for line in f:
