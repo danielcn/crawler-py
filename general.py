@@ -17,9 +17,9 @@ def create_data_files(project_name, base_url):
 
 # Create a new file
 def write_file(path, data):
-    f = open(path, 'w')
-    f.write(data)
-    f.close()
+    file = open(path, 'w')
+    file.write(data)
+    file.close()
 
 # Add data onto an existing files
 def  append_to_file(path, data):
@@ -34,8 +34,8 @@ def delete_file_contets(path):
 # Read a file and convert each line to set items
 def file_to_set(file_name):
     results = set()
-    with open(file_name, 'rt') as f:
-        for line in f:
+    with open(file_name, 'rt') as file:
+        for line in file:
             results.add(line.replace('\n', ''))
     return results
 

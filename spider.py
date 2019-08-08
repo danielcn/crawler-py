@@ -59,7 +59,7 @@ class Spider:
 
     @staticmethod
     def add_links_to_queue(links):
-        for url in links;
+        for url in links:
             if url in Spider.queue:
                 continue
             if url in Spider.clawler
