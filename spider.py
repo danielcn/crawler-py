@@ -2,10 +2,7 @@ import urllib
 from link_finder import LinkFinder
 from general import*
 
-
 class Spider:
-
-    # Class varibles (shared ammong all instances)
     project_name = ''
     base_url = ''
     domain_name = ''
